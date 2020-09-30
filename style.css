@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+h2:hover {
+  color: pink;
+}
+
+h5:hover {
+  color: white;
+}
+
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+}
+
+h4:hover {
+  color: white;
+}
+
+.material-icons:hover {
+  color: white;
+}
+
+.fas:hover {
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: rgb(248, 206, 253);
+  padding: 1px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fimg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  border-style: initial;
+  border-radius: 25px;
+}
+
+.header h2 {
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: rgb(248, 206, 253);
+  padding: 6px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 35px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
